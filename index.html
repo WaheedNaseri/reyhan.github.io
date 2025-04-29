@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waheed Naseri - Python Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f0f4f8;
+      color: #222;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .left-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .left-header img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 15px;
+    }
+
+    .name-title {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .name-title h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .transition-text {
+      font-size: 14px;
+      color: #00bcd4;
+      animation: fade 1.5s infinite alternate;
+    }
+
+    @keyframes fade {
+      0% {opacity: 1;}
+      100% {opacity: 0.5;}
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    nav {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 20px;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    nav a i {
+      margin-right: 6px;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 24px;
+    }
+
+    .hero .animated-text {
+      font-size: 18px;
+      color: #00bcd4;
+      margin-top: 10px;
+      animation: blink 1.2s infinite alternate;
+    }
+
+    @keyframes blink {
+      0% {opacity: 1;}
+      100% {opacity: 0.4;}
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: #333;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #00bcd4;
+    }
+
+    .btns {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .btns a {
+      padding: 10px 20px;
+      background: #00bcd4;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .btns a:hover {
+      background: #0097a7;
+    }
+
+    .about-card {
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .about-card h2 {
+      margin-bottom: 15px;
+    }
+
+    .about-card p {
+      font-size: 16px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="left-header">
+      <img src="your-photo.jpg" alt="Your Photo" />
+      <div class="name-title">
+        <h1>Waheed Naseri</h1>
+        <span class="transition-text">Python Developer</span>
+      </div>
+    </div>
+    <div class="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about"><i class="fas fa-user"></i>About</a>
+    <a href="#resume"><i class="fas fa-file-alt"></i>Resume</a>
+    <a href="#works"><i class="fas fa-briefcase"></i>Works</a>
+    <a href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="your-photo.jpg" alt="Your Photo" />
+    <h1>Waheed Naseri</h1>
+    <div class="animated-text">Python Developer</div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="btns">
+      <a href="cv.pdf" download>Download CV</a>
+      <a href="#contact">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Me Card -->
+  <div class="about-card" id="about">
+    <h2>About Me</h2>
+    <p>I am Waheed Naseri, a Python developer focused on automation, web scraping, and data cleaning.</p>
+  </div>
+
+</body>
+</html>

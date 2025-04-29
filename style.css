@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0a1f44;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #001a33;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #00bfa6;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+  background-color: #0a1f44;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  font-size: 32px;
+  color: #00bfa6;
+}
+
+.highlight {
+  color: #00bfa6;
+}
+
+.animated-text {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: #00bfa6;
+  color: #0a1f44;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #00a28f;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid #00bfa6;
+  color: #00bfa6;
+}
+
+.btn-secondary:hover {
+  background-color: #00bfa6;
+  color: #0a1f44;
+}
+
+.card {
+  padding: 60px 40px;
+  background-color: #001a33;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #001a33;
+  color: #aaa;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+.social-icons a {
+  color: #00bfa6;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+form input, form textarea {
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+form input:focus, form textarea:focus {
+  outline: 2px solid #00bfa6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
